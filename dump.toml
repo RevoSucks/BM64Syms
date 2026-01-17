@@ -2757,7 +2757,7 @@ functions = [
 name = ".main_code_2"
 rom = 0x000B3B70
 vram = 0x80299370
-size = 0x74C490
+size = 0x3EE0
 
 functions = [
     { name = "func_80299498", vram = 0x80299498, size = 0x148 },
