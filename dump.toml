@@ -317,7 +317,7 @@ functions = [
     { name = "__osDisableInt", vram = 0x80010BC0, size = 0x20 },
     { name = "alSeqpStop", vram = 0x8000A3E0, size = 0x30 },
     { name = "func_80001A04", vram = 0x80001A04, size = 0x10 },
-    { name = "main", vram = 0x800019A0, size = 0x64 },
+    { name = "n64main", vram = 0x800019A0, size = 0x64 },
     { name = "__ll_mod", vram = 0x80012C78, size = 0x9C },
     { name = "func_800186D0", vram = 0x800186D0, size = 0x4C },
     { name = "func_800065C0", vram = 0x800065C0, size = 0x8 },
