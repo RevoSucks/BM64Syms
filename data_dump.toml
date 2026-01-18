@@ -3231,21 +3231,50 @@ symbols = [
 ]
 
 [[section]]
-name = ".B7A50"
+name = ".pre_rsp_area"
 rom = 0x000B7A50
 vram = 0x8029D250
-size = 0x7485B0
+size = 0x1500
 
 symbols = [
-    { name = "B7A50_DATA_START", vram = 0x8029D250 },
     { name = "main_code_2_VRAM_END", vram = 0x8029D250 },
-    { name = "B7A50_VRAM", vram = 0x8029D250 },
+    { name = "pre_rsp_area_VRAM", vram = 0x8029D250 },
     { name = "_binary_assets_B7A50_bin_start", vram = 0x8029D250 },
-    { name = "B7A50_VRAM_END", vram = 0x809E5800 },
-    { name = "_binary_assets_B7A50_bin_end", vram = 0x809E5800 },
-    { name = "B7A50_DATA_END", vram = 0x809E5800 },
+    { name = "pre_rsp_area_DATA_START", vram = 0x8029D250 },
+    { name = "_binary_assets_B7A50_bin_end", vram = 0x8029E750 },
+    { name = "pre_rsp_area_DATA_END", vram = 0x8029E750 },
 ]
 
+[[section]]
+name = ".rsp_area"
+rom = 0x000B8F50
+vram = 0x8029E750
+size = 0x68F0
+
+symbols = [
+    { name = "_binary_assets_B8F50_bin_start", vram = 0x8029E750 },
+    { name = "rsp_area_VRAM", vram = 0x8029E750 },
+    { name = "pre_rsp_area_VRAM_END", vram = 0x8029E750 },
+    { name = "rsp_area_DATA_START", vram = 0x8029E750 },
+    { name = "rsp_area_DATA_END", vram = 0x802A5040 },
+    { name = "_binary_assets_B8F50_bin_end", vram = 0x802A5040 },
+]
+
+[[section]]
+name = ".rsp_area_data"
+rom = 0x000BF840
+vram = 0x802A5040
+size = 0x7407C0
+
+symbols = [
+    { name = "_binary_assets_BF840_bin_start", vram = 0x802A5040 },
+    { name = "rsp_area_VRAM_END", vram = 0x802A5040 },
+    { name = "rsp_area_data_VRAM", vram = 0x802A5040 },
+    { name = "rsp_area_data_DATA_START", vram = 0x802A5040 },
+    { name = "_binary_assets_BF840_bin_end", vram = 0x809E5800 },
+    { name = "rsp_area_data_DATA_END", vram = 0x809E5800 },
+    { name = "rsp_area_data_VRAM_END", vram = 0x809E5800 },
+]
 [[section]]
 name = "ABSOLUTE_SYMS"
 vram = 0x00000000
