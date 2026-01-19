@@ -458,6 +458,16 @@ functions = [
 ]
 
 [[section]]
+name = ".zerojump"
+rom = 0x0001CBC0
+vram = 0x80042000
+size = 0x130
+
+functions = [
+    { name = "func_80042000", vram = 0x80042000, size = 0x9C },
+]
+
+[[section]]
 name = ".main_code"
 rom = 0x00040000
 vram = 0x80225800
